@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-card">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="header-card">
+                <div class="ul-container">
+                    <div class="ul-card">
+                        <ul>
+                            <li>About</li>
+                            <li>Service</li>
+                            <li>Cases</li>
+                            <li>Price</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="ul-card">
+
+                        <button>request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero-section">
+        <div class="hero-container">
+            <div class="hero-card">
+                <h1>Navigating the <br> digital landscapw <br> for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <a href="">Book a Consultation</a>
+            </div>
+            <div class="hero-card">
+                <img src="https://positivus-self.vercel.app/assets/hero-B4X0v0WS.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="service-container">
+        <div class="service-card">
+            <h1>Services</h1>
+        </div>
+        <div class="service-card">
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+                These services include:</p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="gird-card">
+            <h1>Search engine <br> optimize</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s1-DE6z8VdO.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gird-card">
+            <h1 style="background: white;">Pay-per-click<br> advertising</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s2-BkmWdpGP.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gird-card">
+            <h1>search engine<br> optimize</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s3-iqTPpfvR.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gird-card">
+            <h1>Social Media<br> Marketing</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s4-DQWHcTOx.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gird-card">
+            <h1 style="background: white;">Content Creation</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s5-B3APxIk4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gird-card">
+            <h1>Analytics and <br> Tracking</h1>
+            <div class="grid-content-container">
+                <div class="grid-content-card">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <button>learn more</button>
+                </div>
+                <div class="grid-content-card">
+                    <img src="https://positivus-self.vercel.app/assets/s6-DhCBRiCu.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="make-container">
+        <div class="make-card">
+            <h1>Let’s make things happen </h1>
+            <p>Contact us today to learn more about how our digital marketing services can help your business grow and
+                succeed online.</p>
+            <button>Get your free proposal</button>
+
+        </div>
+        <div class="make-card">
+            <img src="https://positivus-self.vercel.app/assets/banner-CfINOqmd.png" alt="">
+        </div>
+    </div>
+
+    <div class="Case-container">
+        <div class="Case-card">
+            <h1>Case Studies</h1>
+        </div>
+        <div class="Case-card">
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+                These services include:</p>
+        </div>
+    </div>
+
+    <div class="local-container">
+        <div class="local-card">
+            <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
+                traffic and a 25% increase in sales.</p>
+            <p>learn more <i class="fa-solid fa-arrow-up"></i></p>
+        </div>
+        <div class="local-card"></div>
+        <div class="local-card">
+            <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key
+                keywords and a 200% increase in organic traffic.</p>
+            <p>learn more <i class="fa-solid fa-arrow-up"></i></p>
+        </div>
+        <div class="local-card"></div>
+        <div class="local-card">
+            <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25%
+                and generated a 20% increase in online sales.</p>
+            <p>learn more <i class="fa-solid fa-arrow-up"></i></p>
+        </div>
+        <div class="local-card"></div>
+    </div>
+
+    <div class="Work-container">
+        <div class="Work-card">
+            <h1>Our Work Process</h1>
+        </div>
+        <div class="Work-card">
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+                These services include:</p>
+        </div>
+    </div>
+
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>01</h1>
+            <p>Consultation</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>02</h1>
+            <p>Research and Strategy Development</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>01</h1>
+            <p>Consultation</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>03</h1>
+            <p>
+                Implementation</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>01</h1>
+            <p>Consultation</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>04</h1>
+            <p>
+                Monitoring and Optimization</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>05</h1>
+            <p>
+
+                Reporting and Communication</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="Consultation-container">
+        <div class="Consultation-card">
+            <h1>06</h1>
+            <p>Continual Improvement</p>
+        </div>
+        <div class="Consultation-card">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+
+
+    <div class="Team-container">
+        <div class="Team-card">
+            <h1>Team</h1>
+        </div>
+        <div class="Team-card">
+            <p>Meet the skilled and experienced team behind our successful digital marketing strategies </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

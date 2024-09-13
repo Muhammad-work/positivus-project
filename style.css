@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   padding: 0px 3rem;
+}
+.ul-container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.ul-card button{
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.header-card ul{
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header-card img{
+    width: 80%;
+}
+#hero-section{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    /* background: red; */
+}
+.hero-container{
+    width: 100%;
+    height: 100%;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.hero-card{
+    width: 40%;
+    height: 510px;
+    /* background: red; */
+    padding: 30px 40px;
+}
+.hero-card:nth-child(1) h1{
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.hero-card:nth-child(1) p{
+  margin-bottom: 20px;
+  width: 380px;
+}
+.hero-card:nth-child(1) a{
+    background: yellow;
+    margin-top: 13px;
+    display: inline-block;
+    padding: 20px 25px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-weight: bolder;
+}
+.hero-card img{
+    width: 100%;
+}
+
+.service-container{
+    width: 100%;
+    height: auto;
+    /* background: red; */
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 10px 120px;
+}
+.service-card h1{
+  font-size: 48px;
+  background: #B9FF66;
+  padding: 10px;
+}
+.service-card p{
+    font-size: 20px;
+    width: 52%;
+}
+.grid-container{
+    width: 100%;
+    height: auto;
+    /* background: red; */
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: repeat(2,620px);
+    grid-template-rows: repeat(3,400px);
+    padding: 3rem;
+}
+.gird-card{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.gird-card:nth-child(2){
+    background-color: #B9FF66;
+}
+.gird-card:nth-child(3){
+    background-color: #191A23;
+
+}
+.gird-card:nth-child(3) button{
+    color: white;
+}
+.gird-card:nth-child(5){
+    background: #B9FF66;
+}
+.gird-card:nth-child(6){
+    background-color: #191A23;
+
+}
+.gird-card:nth-child(6) button{
+    color: white;
+}
+.gird-card h1{
+     font-size: 35px;
+     background:  #B9FF66;
+     display: inline-block;
+     padding:10px 20px;
+     font-weight: bolder;
+     margin-top: 2rem;
+}
+.grid-content-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.grid-content-card i{
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: rotate(25deg);
+  transition: all 0.5s;
+}
+.grid-content-card:hover i{
+    
+    transform: rotate(160deg);
+}
+.grid-content-card button{
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+  margin-left: 20px;
+
+}
+.grid-content-card img{
+    margin-bottom: 30px;
+}
+
+.make-container{
+    width: 80%;
+    height: 400px;
+    background: #F1F5F9;
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    border-radius: 20px;
+}
+.make-card h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.make-card img{
+    width: 90%;
+}
+.make-card p{
+    width: 55%;
+    margin-bottom: 20px;
+}
+.make-card button{
+    background:#191A23;
+    color: white;
+    padding: 20px 18px;
+    font-weight: bolder;
+
+    border-radius: 20px;
+}
+
+.Case-container{
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0px 130px;
+}
+.Case-card h1{
+    font-size: 48px;
+    background: #B9FF66;
+    padding: 10px;
+    font-weight: bolder;
+}
+.Case-card p{
+    width: 55%;
+}
+.local-container{
+    width: 85%;
+   height: 340px;    
+   display: block;
+   margin: auto;
+   margin-top: 2rem;
+   background: #191A23;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 30px;
+   color: white;
+   /* gap: 2rem; */
+}
+.local-card:nth-child(odd){
+    width: 250px;
+    height: auto;
+    /* background: yellow; */
+}
+.local-card:nth-child(even){
+    width: 150px;
+    /* background: yellow; */
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 2rem;
+    border-right: 5px solid white;
+}
+.local-card:nth-child(odd) p:nth-child(1){
+    margin-top: 5rem;
+    font-weight: 500;
+}
+.local-card:nth-child(odd) p:nth-child(2){
+    margin-top: 2rem;
+    color: #B9FF66;
+}
+.local-card:nth-child(odd) p:nth-child(2) i{
+    font-size: 25px;
+    transform: rotate(20deg);
+}
+
+.Work-container{
+    width: 100%;
+    height: 100px;
+    /* background: red; */
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0px 120px;
+}
+.Work-card h1{
+    font-size: 38px;
+    font-weight: bolder;
+    background: #B9FF66;
+    padding: 20px;
+}
+.Work-card p{
+    width: 52%;
+}
+.Consultation-container{
+    width: 85%;
+    height: 150px;
+    /* background: red; */
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3rem;
+    border: 1px solid black;
+}
+.Consultation-card h1{
+    display: inline-block;
+    font-size: 38px;
+    font-weight: bold;
+}
+.Consultation-card p{
+    display: inline-block;
+    font-size: 18px;
+    }
+    .Consultation-card i{
+        font-size: 30px;
+        /* background: yellow; */
+        padding: 15px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    .Team-container{
+        width: 100%;
+        height: 100px;
+        /* background: red; */
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding: 0px 120px;
+    }
+    .Team-card h1{
+        font-size: 48px;
+         font-weight: bolder;
+         background: #B9FF66;
+         padding: 20px;
+    }
+    .Team-card p{
+        width: 80%;
+    }
